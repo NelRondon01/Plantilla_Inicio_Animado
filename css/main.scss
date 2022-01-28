@@ -1,0 +1,245 @@
+*{margin: 0;
+padding: 0;
+transition: all .3s ease;
+font-family: "Poppins";
+box-sizing: border-box;}
+
+$color1: #fff;
+$color2: #cce6f4ff;
+$color3: #174076;
+$color4: #4ba3c3ff;
+
+
+@mixin displayFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    overflow-y: hidden;
+}
+
+header{
+    width: 45%;
+    height: 10vh;
+    background: $color1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    @include displayFlex();
+    justify-content: space-between;
+    z-index: 99;
+
+    >*{
+        min-height: 100%;
+        background: $color1;
+        @include displayFlex();
+    }
+
+    .logo{
+        padding-left: 30px;
+        img{
+            height: 6.5vh;
+        }
+    }
+
+    .menu{
+        width: 80%;
+        list-style-type: none;
+        li{
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            @include displayFlex();         
+            color: $color3;
+            a{
+                cursor: pointer;
+                color: inherit;
+                font-weight: 700; 
+                font-size: 0.9em;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.bggrd{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    display: none;
+    background: rgba(#fff, .8);
+}
+
+.swiper-container{
+    width: 100%;
+    height: 100vh;
+    .swiper-wrapper{
+        width: 100%;
+        height: 100%;
+        .swiper-slide{
+            width: 100%;
+            height: 100%;
+            
+            .slider-left{
+                width: 50%;
+                height: 100%;
+                margin-top: 10vh;
+                background: $color1;
+                padding: 60px;
+                display: flex;
+                flex-direction: column;
+                color: $color3;
+
+                h6{font-size: 1.2em; font-weight: 700;}
+                h1{font-size: 2.5em; font-weight:800; text-transform: uppercase;}
+                p{line-height: 30px;}
+                a{font-size: 1em; margin-top: 20px; color: $color3;}
+            }
+            .slider-right{
+                width: 60%;
+                position: absolute;
+                background: #fff;
+                top: 0;
+                right: 0;
+                z-index: -1;
+                img{max-width: 100%;height: auto;}
+            }
+        }
+    }
+
+    .swiper-buttons{
+        $size: 10vh;
+        height: $size;
+        @include displayFlex();
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        .swiper-button-prev,.swiper-button-next{
+            width: $size;
+            height: 100%;
+            cursor: pointer;
+            color: $color1;
+            position: relative;
+            top: 0;left: 0;
+            margin: 0;
+            &::after{
+                font-weight: 800;
+                font-size: 1.3em;
+            }
+        }
+        .swiper-button-prev{
+            background: $color3;
+        }
+        .swiper-button-next{
+            background: $color4;
+        }
+    }
+}
+
+.burger{
+    $w: 30px;
+    $h: 5px;
+    width: $w;
+    height: $h;
+    background: $color3;
+    position: absolute;
+    display: none;
+
+    &::after, &::before{
+        content: "";
+        width: $w;
+        height: $h;
+        background: $color3;
+        display: inline-block;
+        position: absolute;
+    }
+
+    &::before{top: $h+5px;}
+    &::after{bottom: $h+5px;}
+}
+
+@media (max-width: 900px) {
+    header{width: 100%;}
+    .swiper-container .swiper-wrapper .swiper-slide .slider-left{
+        width: 100%;
+        background: linear-gradient( to right, 
+            $color1 35%,
+            transparent
+        ); 
+        p{
+            width: 50%;
+            line-height: initial;
+        }
+    }
+    .swiper-container .swiper-wrapper .swiper-slide .slider-right{
+        width: 100%;
+    }
+
+    .swiper-container .swiper-buttons{
+        right: 0;
+    }
+}
+
+@media (max-width: 550px) {
+    header{width: 100%; height: 10vh; flex-direction: column; padding: 0; justify-content: center; position: relative; z-index: 100;
+        .logo{
+            width: 100%;
+            padding: 30px;
+        }
+        .menu {
+            width: 100%;
+            flex-direction: column;
+            position: absolute;
+            opacity: 0;
+            z-index: -1;
+            background: rgba(#fff, .96);
+            li {
+                a{font-size: 0.75em;}
+                &:hover{
+                    color: $color1;
+                    background: $color4;
+                }
+            }
+        }
+        &.active .menu{
+            top: 100%;
+            opacity: 1;
+        }
+
+        &.active + .bggrd{
+            display: inline-block;
+        }
+    }
+
+    .burger{display: inline-block; left: 30px; cursor: pointer;}
+    .swiper-container .swiper-wrapper .swiper-slide .slider-left{
+        padding: 0 30px;
+        padding-top: 50px;
+        align-items: center;
+        margin-top: 0;
+        background: linear-gradient( to bottom right, 
+            $color1 20%,
+            transparent
+        ); 
+        // h6{font-size: 1em;}
+        h1{font-size: 2em;}
+        .element{text-align: center;}
+        p{width: 100%; font-size: 0.95em;}
+        a{font-size: 0.9em;}
+    }
+    .swiper-container .swiper-wrapper .swiper-slide .slider-right{
+        img{height: 100vh; width: 100%;}
+    }
+
+    .swiper-buttons{
+        width: 100%;
+        z-index: 50;
+        top: 80%;
+        left: 0;
+    }
+}

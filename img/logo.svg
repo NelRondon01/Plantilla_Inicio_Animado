@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="200"
+   height="200"
+   viewBox="0 0 52.916665 52.916668"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     width="200px"
+     inkscape:snap-page="true"
+     inkscape:zoom="1.5370248"
+     inkscape:cx="112.88042"
+     inkscape:cy="136.62759"
+     inkscape:window-width="1440"
+     inkscape:window-height="838"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="sds" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="sds"
+       transform="matrix(0.92638664,0,0,0.92638664,-36.036712,-33.330442)"
+       inkscape:export-filename="C:\neltemp\PROJECT2\img\logo.png"
+       inkscape:export-xdpi="120"
+       inkscape:export-ydpi="120">
+      <circle
+         style="fill:none;stroke:#174076;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+         id="path31"
+         cx="67.461082"
+         cy="64.539764"
+         r="26.060789"
+         inkscape:export-filename="C:\neltemp\PROJECT2\img\logo.png"
+         inkscape:export-xdpi="120"
+         inkscape:export-ydpi="120" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:30.9293px;line-height:1.25;font-family:Poppins;-inkscape-font-specification:'Poppins, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#174076;fill-opacity:1;stroke:none;stroke-width:14.6124;stroke-miterlimit:4;stroke-dasharray:none"
+         x="51.176811"
+         y="75.395943"
+         id="text1787"
+         inkscape:export-filename="C:\neltemp\PROJECT2\img\logo.png"
+         inkscape:export-xdpi="120"
+         inkscape:export-ydpi="120"><tspan
+           sodipodi:role="line"
+           id="tspan1785"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:30.9293px;font-family:Poppins;-inkscape-font-specification:'Poppins, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#174076;fill-opacity:1;stroke-width:14.6124;stroke-miterlimit:4;stroke-dasharray:none"
+           x="51.176811"
+           y="75.395943">W</tspan></text>
+    </g>
+  </g>
+</svg>
